@@ -5,7 +5,7 @@ try{
 define("HOST", "localhost");
 
 //dbname
-define("DBNAME","coffe-shop");
+define("DBNAME","coffee-shop");
 
 //user 
 define("USER", "root");
@@ -13,7 +13,7 @@ define("USER", "root");
 //password
 define("PASS", "");
 
-$conn = new PDO("mysql:host=".HOST.";dename=".DBNAME."",USER,PASS);
+$conn = new PDO("mysql:host=".HOST.";dbname=".DBNAME."",USER,PASS);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 } catch(PDOException $Excepton){
