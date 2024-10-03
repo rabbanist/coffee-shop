@@ -14,7 +14,6 @@ if (empty($_POST['email']) or empty($_POST['password'])) {
   $password = $_POST['password'];
 
   //check email using query 
-
   $login = $conn->query("SELECT * FROM users WHERE email='$email'");
   $login->execute();
 
@@ -32,7 +31,7 @@ if (empty($_POST['email']) or empty($_POST['password'])) {
       echo "<script>alert('email or password is worng');</script>";
     }
   } else {
-    echo "<script>alert('email is worng');</script>";
+    echo "<script>alert('email or password is worng');</script>";
   }
 }
 
